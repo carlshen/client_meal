@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/list/list",
+    "pages/order/list/list",
+    "pages/order/balance/balance",
+    "pages/order/detail/detail",
+    "pages/record/record"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF9C35",
+    "navigationBarTitleText": "美食屋",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}
