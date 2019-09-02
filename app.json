@@ -3,8 +3,7 @@
     "pages/list/list",
     "pages/order/list/list",
     "pages/order/balance/balance",
-    "pages/order/detail/detail",
-    "pages/record/record"
+    "pages/order/detail/detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

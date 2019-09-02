@@ -69,7 +69,6 @@ Page({
       currentIndex: index,
     });
     var a = this.data
-    console.log(a)
     // 声明数组addItem
     var addItem = {
       "type": type,
@@ -125,7 +124,6 @@ Page({
       console.log(cutItem);
       for (i = 0; i < cartList.length; i++) {
         if (cartList[i].name == cutItem.name) {
-          console.log(cartList[i])
           type = cartList[i].type;
           index = cartList[i].index;
           result = true;

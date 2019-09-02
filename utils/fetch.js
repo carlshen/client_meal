@@ -2,7 +2,7 @@ module.exports = function(path, data, method) {
   // 暴露接口
   return new Promise((resolve, reject) => {
     wx.request({
-      url: 'http://1shitang.tsinghuaic.com/api/' + path, //api地址
+      url: 'https://1shitang.tsinghuaic.com/api/' + path, //api地址
       method: method, // 请求方法
       data: data, // 参数
       header: {

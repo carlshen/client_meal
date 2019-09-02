@@ -15,7 +15,6 @@ App({
           // 执行到此处表示用户已经授权，可以直接获取到用户信息
           wx.getUserInfo({
             success: res => {
-              console.log(res)
               console.log(res.userInfo)
               this.globalData.userInfo = res.userInfo
               if (this.userInfoReadyCallback) {
