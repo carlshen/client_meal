@@ -194,12 +194,18 @@ Page({
     if (this.data.sumMonney == 0) {
       return
     }
-    console.log(app.globalData.userInfo);
-    // 请求接口返回参数{error: 0（错误代码）, order_id: 1}}
-    const datas = {
-      id: app.globalData.userInfo.nickName, num: this.data.cupNumber,
-      avatar: app.globalData.userInfo.avatarUrl
+    console.log(app.globalData);
+    var myDate = new Date();
+    var datas = {
+      id: myDate.getMilliseconds, num: this.data.cupNumber,
+      avatar: myDate.getMilliseconds
     };
+    if (app.globalData.token) {
+      datas = {
+        id: app.globalData.token, num: this.data.cupNumber,
+        avatar: app.globalData.token
+      };
+    }
     console.log(JSON.stringify(datas));
     fetch("food/order", {
       method: 'POST',
