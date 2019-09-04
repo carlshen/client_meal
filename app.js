@@ -31,7 +31,7 @@ App({
       success: res => {
         console.log('login code: ' + res.code)
         wx.request({
-          url: 'https://1shitang.tsinghuaic.com/api/login',
+          url: 'http://192.168.40.236/api/login',
           method: 'post',
           data: { code: res.code },
           success: res => {
@@ -58,7 +58,7 @@ App({
       }
     }
     wx.request({
-      url: 'https://1shitang.tsinghuaic.com/api/checklogin',
+      url: 'http://192.168.40.236/api/checklogin',
       data: { token: token },
       success: res => {
         callback({ is_login: res.data.is_login })

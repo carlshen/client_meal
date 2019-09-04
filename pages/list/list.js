@@ -197,13 +197,13 @@ Page({
     console.log(app.globalData);
     var myDate = new Date();
     var datas = {
-      id: myDate.getMilliseconds, num: this.data.cupNumber,
-      avatar: myDate.getMilliseconds
+      id: myDate.getTime(), num: this.data.cupNumber,
+      data: this.data.cartList
     };
     if (app.globalData.token) {
       datas = {
         id: app.globalData.token, num: this.data.cupNumber,
-        avatar: app.globalData.token
+        data: this.data.cartList
       };
     }
     console.log(JSON.stringify(datas));
